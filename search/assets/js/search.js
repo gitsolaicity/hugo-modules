@@ -343,15 +343,18 @@ if (hasSearchWrapper) {
 
     // count time end
     const endTime = performance.now();
+    var i18n_translations = {{ i18n | jsonify }};
 
-    // count total-result and time
-    let totalResults = `<em>${filteredItemsLength}</em> ${i18n('results')}`;
-    let totalTime = ((endTime - startTime) / 1000).toFixed(3);
-    totalTime = `- ${i18n('in')} <em>${totalTime}</em> ${i18n('seconds')}`;
 
-    searchResultInfo &&
-      (searchResultInfo.innerHTML =
-        filteredItemsLength > 0 ? `${totalResults} ${totalTime}` : "");
+// count total-result and time
+let totalResults = `<em>${filteredItemsLength}</em> ${i18n_translations.results}`;
+let totalTime = ((endTime - startTime) / 1000).toFixed(3);
+totalTime = `- ${i18n_translations.in} <em>${totalTime}</em> ${i18n_translations.seconds}`;
+
+searchResultInfo &&
+  (searchResultInfo.innerHTML =
+    filteredItemsLength > 0 ? `${totalResults} ${totalTime}` : "");
+
 
     // hide search-result-group-title if un-available result
     const groupTitle = document.querySelectorAll(".search-result-group-title");
