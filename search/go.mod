@@ -1,3 +1,3 @@
-module github.com/gethugothemes/hugo-modules/search
+module github.com/gitsolaicity/hugo-modules/search
 
 go 1.20
