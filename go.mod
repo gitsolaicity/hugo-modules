@@ -1,3 +1,3 @@
-module github.com/gethugothemes/hugo-modules
+module github.com/gitsolaicity/hugo-modules
 
-go 1.19
+go 1.20
