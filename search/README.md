@@ -10,7 +10,7 @@ Add the following code to your module list in the `config/_default/module.toml` 
 
 ```toml
 [[imports]]
-path = "github.com/gethugothemes/hugo-modules/search"
+path = "github.com/gitsolaicity/hugo-modules/search"
 ```
 
 Add the following code to your `asstes/scss/main.scss` or `asstes/scss/style.scss` file.
@@ -87,7 +87,7 @@ Add the following translations to your `i18n/*.yaml` files if you use multilangu
 There are two search types.
 | 1. As a Popup | 2. Within a Page |
 | :-----------: | :-----------: |
-| ![image](https://github.com/gethugothemes/hugo-modules/assets/87603786/daf67039-f84c-4799-95b8-4d647e0f535f) | ![image](https://github.com/gethugothemes/hugo-modules/assets/87603786/84ab4cc1-e8fd-460c-95f1-e5432b8b792b) |
+| ![image](https://github.com/gitsolaicity/hugo-modules/assets/87603786/daf67039-f84c-4799-95b8-4d647e0f535f) | ![image](https://github.com/gitsolaicity/hugo-modules/assets/87603786/84ab4cc1-e8fd-460c-95f1-e5432b8b792b) |
 
 ### Use it as a modal
 
