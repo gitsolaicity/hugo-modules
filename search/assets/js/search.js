@@ -346,9 +346,9 @@ if (hasSearchWrapper) {
 
 
     // count total-result and time
-let totalResults = `<em>${filteredItemsLength}</em> ${i18n_translations.results}`;
+let totalResults = `<em>${filteredItemsLength}</em> {{ i18n "results" . }}`;
 let totalTime = ((endTime - startTime) / 1000).toFixed(3);
-totalTime = `- ${i18n_translations.in} <em>${totalTime}</em> ${i18n_translations.seconds}`;
+totalTime = `- {{ i18n "in" . }} <em>${totalTime}</em> {{ i18n "seconds" . }}`;
 
 searchResultInfo &&
   (searchResultInfo.innerHTML =
