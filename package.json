@@ -1,14 +1,14 @@
 {
-  "name": "@gethugothemes/hugo-modules",
-  "description": "Hugo Modules for gethugothemes.com themes",
-  "homepage": "https://github.com/gethugothemes/hugo-modules",
+  "name": "@gitsolaicity/hugo-modules",
+  "description": "Hugo Modules for gitsolaicity.com themes",
+  "homepage": "https://github.com/gitsolaicity/hugo-modules",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gethugothemes/hugo-modules.git"
+    "url": "git+https://github.com/gitsolaicity/hugo-modules.git"
   },
   "bugs": {
-    "url": "https://github.com/gethugothemes/hugo-modules/issues"
+    "url": "https://github.com/gitsolaicity/hugo-modules/issues"
   },
   "keywords": [
     "hugo",
