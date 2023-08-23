@@ -1,3 +1,7 @@
+{{ $results_translation := i18n "results" }}
+{{ $in_translation := i18n "in" }}
+{{ $seconds_translation := i18n "seconds" }}
+
 {{- $allSections := slice -}}
 {{- range site.Home.Sections -}}
   {{- $allSections = $allSections | append .Section -}}
@@ -15,7 +19,7 @@
   let includeSectionsInSearch = {{ $search_sections }};
   let no_results_for = {{ i18n `no_results_for` | default "0 results for"}};
   let empty_search_results_placeholder = {{ i18n `empty_search_results_placeholder`}};
-  let results_translation = {{ i18n 'results_translation' }};
-  let in_translation = {{ i18n 'in_translation' }};
-  let seconds_translation = {{ i18n 'seconds_translation' }};
+  let results_translation = "{{ $results_translation }}";
+  let in_translation = "{{ $in_translation }}";
+  let seconds_translation = "{{ $seconds_translation }}";
 </script>
