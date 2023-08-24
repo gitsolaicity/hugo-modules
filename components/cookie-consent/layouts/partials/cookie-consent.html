@@ -2,11 +2,11 @@
 {{ with site.Params.cookies }}
   {{ if .enable }}
     <div id="cookie-box" class="cookie-box cookie-box-hide">
-      {{ i18n "cookies.banner_content" | markdownify }}
+      {{ i18n "cookies_banner_content" | markdownify | default .content | markdownify }}
       <button
         id="cookie-button"
         class="cookie-box-button btn btn-sm btn-outline-primary">
-        {{ i18n "cookies.button_text" }}
+        {{ i18n "cookies_button_text" | default .button }}
       </button>
     </div>
 
