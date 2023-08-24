@@ -2,7 +2,7 @@
 {{ with site.Params.cookies }}
   {{ if .enable }}
     <div id="cookie-box" class="cookie-box cookie-box-hide">
-      {{- with site.i18n.cookies | findRE "cookie_banner_content" -}}
+      {{- with site.i18n.cookies.cookie_banner_content -}}
         {{- .translation | markdownify -}}
       {{- else -}}
         {{- .content | markdownify -}}
@@ -10,7 +10,7 @@
       <button
         id="cookie-button"
         class="cookie-box-button btn btn-sm btn-outline-primary">
-        {{- with site.i18n.cookies | findRE "cookie_button_text" -}}
+        {{- with site.i18n.cookies.cookie_button_text -}}
           {{- .translation -}}
         {{- else -}}
           {{- .button -}}
