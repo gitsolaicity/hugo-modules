@@ -2,11 +2,19 @@
 {{ with site.Params.cookies }}
   {{ if .enable }}
     <div id="cookie-box" class="cookie-box cookie-box-hide">
-     {{- site.i18n.cookies.banner_content | default .content | markdownify -}}
+      {{- with site.i18n.cookies | findRE "cookie_banner_content" -}}
+        {{- .translation | markdownify -}}
+      {{- else -}}
+        {{- .content | markdownify -}}
+      {{- end -}}
       <button
         id="cookie-button"
         class="cookie-box-button btn btn-sm btn-outline-primary">
-        {{- site.i18n.cookies.button_text | default .button -}}
+        {{- with site.i18n.cookies | findRE "cookie_button_text" -}}
+          {{- .translation -}}
+        {{- else -}}
+          {{- .button -}}
+        {{- end -}}
       </button>
     </div>
 
